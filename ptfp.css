@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.logos {
+    overflow: hidden;
+    padding: 20px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.logos-slide {
+    white-space: nowrap;
+    animation: slide 35s linear infinite;
+}
+
+.logos-slide img {
+    height: 70px;
+    margin-right: 20px;
+}
+
+.strength, .activity {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.recruiters {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.recruiters th, .recruiters td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.recruiters th {
+    background-color: #f2f2f2;
+}
+
+.recruiters tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.recruiters tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

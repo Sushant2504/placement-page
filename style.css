@@ -1,0 +1,31 @@
+/* ... (unchanged styles) */
+
+.img-container {
+    position: relative; /* Enable positioning for animation */
+    height: 700px;
+    overflow: hidden; /* Prevent image cropping during animation */
+    background-image: linear-gradient(to bottom, #f5f5f5, #e5e5e5); /* Base color */
+  }
+  
+  .img-container:hover .img {
+    animation: imageHover 1s ease-out forwards; /* Apply animation on hover */
+  }
+  
+  @keyframes imageHover {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-5%); /* Adjust for desired vertical movement */
+    }
+  }
+  
+  .img {
+    height: 300px;
+    width: 200px;
+    margin: 200px auto; /* Center vertically within container */
+    transition: transform 0.3s ease-in-out; /* Smoother animation transition */
+  }
+  
+  /* ... (other styles) */
+  
